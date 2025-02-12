@@ -19,6 +19,6 @@
 | Ty Bohlander         | tbohlander@sfsu.edu              | Tybo2020        |
 | Prince Santos        | psantos3@gmail.com               | LePuncake321    |
 | Michael Tran         | mtran25@sfsu.edu                 | MiTran25        |
-| Julia BUi            | jbui1@sfsu.edu                   | juliabui        |
+| Julia Bui            | jbui1@sfsu.edu                   | juliabui        |
 
 ## NO code needs to be stored in the root of your repository. You may rename the application folder if you like to your team's application name. But all source code related to your team's application should be stored inside the application folder.
