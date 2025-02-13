@@ -17,7 +17,7 @@
 |    :---:             |      :---:                       |     :---:       |
 | Eugenio Ramirez      | eramirezmeneghello@sfsu.edu      | eugenio-dev     |
 | Ty Bohlander         | tbohlander@sfsu.edu              | Tybo2020        |
-| Prince Santos        | psantos3@gmail.com               | LePuncake321    |
+| Prince Santos        | psantos3@sfsu.edu                | LePuncake321    |
 | Michael Tran         | mtran25@sfsu.edu                 | MiTran25        |
 | Julia Bui            | jbui1@sfsu.edu                   | juliabui        |
 
