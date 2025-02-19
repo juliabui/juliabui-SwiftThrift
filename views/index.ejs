@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= "[Insert title later]" %></title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x/dist/cdn.min.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to <%= title %></h1>
+
+    <div x-data="{ count: 0 }">
+        <p>Counter: <span x-text="count"></span></p>
+        <button @click="count++">Increase</button>
+    </div>
+</body>
+</html>
