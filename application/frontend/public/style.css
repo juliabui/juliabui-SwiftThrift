@@ -1,0 +1,43 @@
+/* Background color */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style links */
+a {
+    text-decoration: none;
+    color: #00008B;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Formatting pfp and about me paragtaph */
+.wrapper {
+    display: flex;          
+    align-items: center;
+    gap: 20px;              
+    max-width: 800px;      
+    margin: 50px;           
+}
+
+.wrapper img{
+    width:200px;
+    height: 200px;
+}
+
+.text-containr {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.header{
+    
+}
