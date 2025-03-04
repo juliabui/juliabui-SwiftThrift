@@ -9,7 +9,7 @@
 
 1. Server URL or IP: 15.204.91.109, http://15.204.91.109/
 2. SSH username: ajsouza
-3. SSH password: professor
+3. SSH password: BoxCombo1854!@
     <br> If a ssh key is used please upload the key to the credentials folder.
 4. Database URL or IP and port used: http://15.204.91.109/phpmyadmin, or the port used 3306.
     <br><strong> NOTE THIS DOES NOT MEAN YOUR DATABASE NEEDS A PUBLIC FACING PORT.</strong> But knowing the IP and port number will help with SSH tunneling into the database. The default port is more than sufficient for this class.
