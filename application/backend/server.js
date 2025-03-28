@@ -49,8 +49,8 @@ app.get('/about/princec', (req, res) => {
 // Start the server with database connection
 const startServer = async () => {
   try {
-    // Connect to database first
-    await connectToDatabase();
+    // Connect to database first, commented out now so it doesn't interfire with frontend development
+    //await connectToDatabase();
   
     // Then start the server
     app.listen(3000, () => 
