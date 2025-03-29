@@ -97,7 +97,7 @@ const changeListingInfo = async (listingId, name, desc, price) => {
 
 const changeListingStatus = async (listingId, status) => {
     try {
-        const [rows] = await pool.query(CHANGE_LISTING_INFO,
+        const [rows] = await pool.query(CHANGE_LISTING_STATUS,
             status, listingId
         );
         console.log(rows);
