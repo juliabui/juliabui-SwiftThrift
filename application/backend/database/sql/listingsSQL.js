@@ -6,8 +6,8 @@ const CREATE_LISTINGS = `
 CREATE TABLE IF NOT EXISTS Listings (
   listing_id INT AUTO_INCREMENT PRIMARY KEY,
   seller_id INT NOT NULL,
-  name VARCHAR(255) NOT NULL,
-  description TEXT NOT NULL,
+  name VARCHAR(75) NOT NULL,
+  description TEXT(800) NOT NULL,
   price DECIMAL(10,2) NOT NULL,
   status VARCHAR(255) DEFAULT 'active',
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
