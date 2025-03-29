@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= "Our Project!" %></title>
+    <%- include('partials/header', { title: 'Home' }) %>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x/dist/cdn.min.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to our project!! ^_^</h1>
+    <h1>Welcome to Swift Thrift!! ^_^</h1>
+    <h3> CSC 648 <br> Spring '25 <br> Team 09 </h3>
 
-    <div x-data="{ count: 0 }">
-        <p>Counter: <span x-text="count"></span></p>
-        <button @click="count++">Increase</button>
-    </div>
+    <form @submit.prevent="search()">
+        <label>
+          Category:
+          <!-- change later -->
+          <select x-model="category">
+            <option value="">All</option>
+            <option value="services">Services</option>
+            <option value="books">Books</option>
+            <option value="furniture">Furniture</option>
+          </select>
+        </label>
+    
+        <label>
+          Search:
+          <input type="text" x-model="query" placeholder="Search by keyword..." />
+        </label>
+    
+        <button type="submit">🔍 Search</button>
+      </form>
+
 
     <div>
-        <p>Click the link below to learn more about us:</p>
+        <p><br> Click the link below to learn more about us:</p>
         <a href="/about">Go to About Page</a>
     </div>
+
+    <%- include('partials/footer') %> 
 </body>
+
+
 </html>
