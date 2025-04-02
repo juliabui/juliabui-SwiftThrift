@@ -1,12 +1,15 @@
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+
 const mysql = require('mysql2/promise');
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  port: process.env.DB_PORT || 3306,
-  database: process.env.DB_NAME || 'swift_thrift',
-  user: process.env.DB_USER || '', // Your MySQL username
-  password: process.env.DB_PASSWORD || '', // Your MySQL password
+  // Remember to create your .env file with these values
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  database: process.env.DB_NAME,
+  user: process.env.DB_USER, 
+  password: process.env.DB_PASSWORD,
 });
 
 // Function to initialize database connection
