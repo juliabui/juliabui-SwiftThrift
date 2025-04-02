@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mysql2": "^3.6.5",
+    "dotenv": "^16.3.1"
   },
   "name": "csc648-fa25-0104-team09",
   "version": "1.0.0",
