@@ -14,8 +14,8 @@
 4. Database URL or IP and port used: http://15.204.91.109/phpmyadmin, or the port used 3306.
     <br><strong> NOTE THIS DOES NOT MEAN YOUR DATABASE NEEDS A PUBLIC FACING PORT.</strong> But knowing the IP and port number will help with SSH tunneling into the database. The default port is more than sufficient for this class.
 6. Database username: ajsouza
-7. Database password: professor
-8. Database name: csc648-website
+7. Database password: BoxCombo1854!@
+8. Database name: swift_thrift
 9. Instructions on how to use the above information.
 # Database Connection Instructions
  
@@ -23,7 +23,7 @@
 1. Open your browser and go to: [http://15.204.91.109/phpmyadmin](http://15.204.91.109).  
 2. Enter your credentials:  
    - **Username:** `ajsouza`  
-   - **Password:** `professor`  
+   - **Password:** `BoxCombo1854!@`  
 3. Click **Log In** to access the phpmyadmin normally and then see the database csc648-website.  
 
 ---
@@ -36,7 +36,7 @@
    ```bash
    mysql -u ajsouza -p (port if necessary -P 3306)
    ```  
-3. Enter the password (`professor`) when prompted.  
+3. Enter the password (`BoxCombo1854!@`) when prompted.  
 
 ---
 
