@@ -6,11 +6,11 @@ const { pool, connectToDatabase } = require("./database/connection");
 const listingsRoutes = require('./routes/listings');
 
 // Serve static files (CSS, JS, images)
-app.use(express.static(path.join(__dirname, "../frontend/public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // Set up EJS for SSR
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname,"../frontend/views"));
+app.set("views", path.join(__dirname,"/views/pages"));
 
 // Use API routes
 app.use('/api', listingsRoutes);
@@ -22,32 +22,32 @@ app.get("/", (req, res) => {
 
 // About Page
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/public', 'about.html'));
+  res.sendFile(path.join(__dirname, '/public', 'about.html'));
 });
 
 // Ty's page
 app.get('/about/ty', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/public', 'ty.html'));
+  res.sendFile(path.join(__dirname, '/public', 'ty.html'));
 });
 
 // Eugenio's page
 app.get('/about/eugenio', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/public', 'eugenio.html'));
+  res.sendFile(path.join(__dirname, '/public', 'eugenio.html'));
 });
 
 // Julia's page
 app.get('/about/julia', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/public', 'julia.html'));
+  res.sendFile(path.join(__dirname, '/public', 'julia.html'));
 });
 
 // Michael's page
 app.get('/about/michael', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/public', 'michael.html'));
+  res.sendFile(path.join(__dirname, '/public', 'michael.html'));
 });
 
 // Prince's page
 app.get('/about/princec', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/public', 'prince.html'));
+  res.sendFile(path.join(__dirname, '/public', 'prince.html'));
 });
 
 // Start the server with database connection
