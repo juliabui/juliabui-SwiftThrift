@@ -1,12 +1,13 @@
-require('dotenv').config();
 const mysql = require('mysql2/promise');
+require('dotenv').config();
 
 const pool = mysql.createPool({
-    host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || 3306,
-    database: process.env.DB_NAME || 'csc648',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'password' //change password to your own mysql one
+  // Remember to create your .env file with these values
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  database: process.env.DB_NAME,
+  user: process.env.DB_USER, 
+  password: process.env.DB_PASSWORD,
 });
 
 // Function to initialize database connection
@@ -22,4 +23,15 @@ const connectToDatabase = async () => {
     }
   };
 
-module.exports = { pool, connectToDatabase };
+// Helper function to execute queries
+const query = async (sql, params) => {
+  try {
+    const [results] = await pool.execute(sql, params);
+    return results;
+  } catch (error) {
+    console.error('Query error:', error);
+    throw error;
+  }
+};
+
+module.exports = { pool, connectToDatabase, query };
