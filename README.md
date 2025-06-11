@@ -20,7 +20,7 @@ Swift Thrift is a campus resell and services platform built for students at San 
 - **Other Tools**: Socket.io (messaging), Multer (file uploads), Let's Encrypt (SSL)
 
 
-## Contributors: 
+## Contributors
 
 | Student Name         |  Role                    | GitHub Username |
 |    :---:             |      :---:               |     :---:       |
