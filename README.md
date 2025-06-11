@@ -1,24 +1,32 @@
-# csc648 Repository
+## SwiftThrift
 
-## Please when ready add your teams application URL or IP to the repository description. This will help with grading. Teams are expected to keep this value up to date.
+Swift Thrift is a campus resell and services platform built for students at San Francisco State University. It was developed as part of our CSC 648/848 Software Engineering course. The goal of the site is to make it easier for students to buy and sell items or offer services directly to each other in a simple and secure way.
 
-## Please do the following steps before completing Milestone 0.
-1. Change the name of the repository. All that needs to change is the NN to your respective team number. Team numbers whose value is less than 10, please pad with a 0. Ex team 1 is Team01 team 11 is Team11. Please make sure to also remove the username from the repository as well. Teams with incorrectly name repository will have points deducted from their milestone 0 grades.
-      - Please follow the naming convention assigned by your instructor.
+## Features
 
-1. PLEASE REMOVE THE USERNAME FROM THE REPOSITORY NAME!!!
+- Create and browse listings for both products and services
+- Book service times using a built-in calendar
+- Mobile-friendly UI with responsive layout
+- Login and sign-up system with session handling
+- Private messaging between buyers and sellers
+- Category filtering for easier browsing
 
-2. Add ALL members of your team to this repository. For it to count, they must ACCEPT the invite.
+## Stack
 
-3. Fill out the table below
+- **Frontend**: EJS, Alpine.js
+- **Backend**: Node.js with Express
+- **Database**: MySQL with phpMyAdmin
+- **Hosting**: OVH VPS running Ubuntu 24.04
+- **Other Tools**: Socket.io (messaging), Multer (file uploads), Let's Encrypt (SSL)
 
 
-| Student Name         |  School Email                    | GitHub Username |
-|    :---:             |      :---:                       |     :---:       |
-| Eugenio Ramirez      | eramirezmeneghello@sfsu.edu      | eugenio-dev     |
-| Ty Bohlander         | tbohlander@sfsu.edu              | Tybo2020        |
-| Prince Santos        | psantos3@sfsu.edu                | LePuncake321    |
-| Michael Tran         | mtran25@sfsu.edu                 | MiTran25        |
-| Julia Bui            | jbui1@sfsu.edu                   | juliabui        |
+## Contributors: 
 
-## NO code needs to be stored in the root of your repository. You may rename the application folder if you like to your team's application name. But all source code related to your team's application should be stored inside the application folder.
+| Student Name         |  Role                    | GitHub Username |
+|    :---:             |      :---:               |     :---:       |
+| Eugenio Ramirez      | Git Lead                 | eugenio-dev     |
+| Ty Bohlander         | Team Lead                | Tybo2020        |
+| Prince Santos        | Backend Lead             | LePuncake321    |
+| Michael Tran         | Frontend Developer       | MiTran25        |
+| Julia Bui            | Frontend Lead            | juliabui        |
+
